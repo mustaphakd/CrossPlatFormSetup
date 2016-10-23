@@ -18,6 +18,8 @@ namespace DjonTraore
         {
             InitializeComponent();
 
+            this.BindingContext = this;
+
             var tapGesture = new TapGestureRecognizer();
             tapGesture.Command = new Command(() => {
 
@@ -38,7 +40,8 @@ namespace DjonTraore
             Device.StartTimer(TimeSpan.FromSeconds(2), () =>
             {
                 MainText = muezzin.Callout() + "," + counter++;
-                var val = random.Next(0, 1);
+                OnPropertyChanged(nameof(MainText));
+                var val = random.Next(0, 3);
                 bxvwColor.Color = val == 0 ? Color.Accent : Color.Fuchsia;
                 return true;
             });

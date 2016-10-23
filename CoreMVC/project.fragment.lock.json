@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "exports": {
+    "StandardPCL/1.0.0": {
+      "type": "project",
+      "framework": ".NETStandard,Version=v1.5",
+      "compile": {
+        "bin/Debug/StandardPCL.dll": {}
+      },
+      "runtime": {
+        "bin/Debug/StandardPCL.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/StandardPCL.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    }
+  }
+}

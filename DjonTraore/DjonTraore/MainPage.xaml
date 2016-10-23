@@ -8,7 +8,7 @@
     </Frame.Margin>
     <StackLayout>
       <StackLayout.Children>
-        <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+        <Label FontSize="Large" Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center"></Label>
         <BoxView x:Name="bxvwColor"  Color="Yellow" WidthRequest="50" HeightRequest="50" />
       </StackLayout.Children>
     </StackLayout>
